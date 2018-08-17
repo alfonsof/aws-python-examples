@@ -60,8 +60,6 @@ Delete a S3 bucket using the Client API (low-level).
     set AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
     ```
 
-* You can select the bucket region changing the value of `region` variable in the code.
-
 * Run the code.
 
   You must provide 1 parameter:
