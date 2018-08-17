@@ -11,7 +11,9 @@ The code for the samples is contained in individual folders on this repository. 
 **Storage - Amazon S3:**
 
 * [awss3create-capi](/awss3create-capi) - AWS S3 Create (Client API): Example of how to handle S3 buckets and create a new S3 bucket using the Client API (low-level).
-* [awss3delete-rapi](/awss3delete-rapi) - AWS S3 Create (Resource API): Example of how to handle S3 buckets and delete a S3 bucket using the Resource API (high-level).
+* [awss3create-rapi](/awss3create-rapi) - AWS S3 Create (Resource API): Example of how to handle S3 buckets and create a new S3 bucket using the Resource API (high-level).
+* [awss3delete-capi](/awss3delete-capi) - AWS S3 Delete (Client API): Example of how to handle S3 buckets and delete a  S3 bucket using the Client API (low-level).
+* [awss3delete-rapi](/awss3delete-rapi) - AWS S3 Delete (Resource API): Example of how to handle S3 buckets and delete a S3 bucket using the Resource API (high-level).
 
 For instructions on running the code, please consult the README in each folder.
 
