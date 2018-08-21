@@ -7,7 +7,7 @@ Create a new S3 bucket using the Client API (low-level).
 ## Requirements
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
-* The code was written for Python 2.7 and AWS SDK for Python (Boto3).
+* The code was written for Python 3.7 and AWS SDK for Python (Boto3).
 * This example uses Client API (low-level) of Boto3.
 
   Boto3 offers two different styles of API:
