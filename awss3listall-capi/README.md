@@ -74,4 +74,4 @@ List information about all S3 buckets and the objects they contain using the Cli
 
 * Test the application.
 
-  You should see the list of buckets and files stored in each S3 buckets.
+  You should see the list of buckets and objects stored in each S3 buckets.
