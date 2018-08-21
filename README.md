@@ -16,6 +16,7 @@ The code for the samples is contained in individual folders on this repository. 
   * [awss3listall-capi](/awss3listall-capi) - AWS S3 List All (Client API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Client API (low-level).
   * [awss3list-capi](/awss3list-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Client API (low-level).
   * [awss3upload-capi](/awss3upload-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Client API (low-level).
+  * [awss3download-capi](/awss3download-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and download an object from a S3 bucket to a local file using the Client API (low-level).
 
 * Using the Boto3 Resource API (high-level)
   * [awss3create-rapi](/awss3create-rapi) - AWS S3 Create (Resource API): Example of how to handle S3 buckets and create a new S3 bucket using the Resource API (high-level).
@@ -23,6 +24,7 @@ The code for the samples is contained in individual folders on this repository. 
   * [awss3listall-rapi](/awss3listall-rapi) - AWS S3 List All (Resource API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Resource API (high-level).
   * [awss3list-rapi](/awss3list-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Resource API (high-level).
   * [awss3upload-rapi](/awss3upload-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Resource API (high-level).
+  * [awss3download-rapi](/awss3download-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and download an object from a S3 bucket to a local file using the Resource API (high-level).
 
 For instructions on running the code, please consult the README in each folder.
 
