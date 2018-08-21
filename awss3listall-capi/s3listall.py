@@ -3,7 +3,7 @@
 # s3listall.py
 # s3listall is an example that handles S3 buckets on AWS
 # It uses Client API (low-level) of Boto3
-# List information about all S3 buckets and the files they contain
+# List information about all S3 buckets and the objects they contain
 
 import sys
 import boto3
@@ -14,15 +14,15 @@ def main():
   # Create an S3 Client
   s3client = boto3.client('s3')
 
-  print 'Listing S3 buckets and objects ...'
+  print('Listing S3 buckets and objects ...')
   # List buckets
   list_buckets_resp = s3client.list_buckets()
   for bucket in list_buckets_resp['Buckets']:
-    print '* Bucket: ' + bucket['Name']
+    print('* Bucket: ' + bucket['Name'])
     s3objects = s3client.list_objects_v2(Bucket=bucket['Name'])
     if s3objects['KeyCount'] > 0:
       for s3object in s3objects['Contents']:
-        print ' - Object: ' + s3object['Key'] 
+        print(' - Object: ' + s3object['Key'])
 
   return
 

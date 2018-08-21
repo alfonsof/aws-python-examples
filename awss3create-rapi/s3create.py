@@ -19,11 +19,11 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 1:
-    print 'Not enough parameters. Proper Usage is: python s3create.py <BUCKET_NAME>'
+    print('Not enough parameters. Proper Usage is: python s3create.py <BUCKET_NAME>')
     sys.exit(1)
 
   bucket_name = args[0]
-  print 'Bucket name: ' + bucket_name
+  print('Bucket name: ' + bucket_name)
 
   # Instantiate the service resource object
   s3resource = boto3.resource('s3')
@@ -33,15 +33,15 @@ def main():
 
   # Create the bucket object
   try:
-    print 'Creating bucket...'
+    print('Creating bucket...')
     response = bucket.create(ACL='private',
                               CreateBucketConfiguration={
                                 'LocationConstraint': region
                               }
                             )
-    print response
-    print '\nCreated'
-    print response['Location']
+    print(response)
+    print('\nCreated')
+    print(response['Location'])
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "BucketAlreadyOwnedByYou":
       print("Error: Bucket already created and owned by you!!")
