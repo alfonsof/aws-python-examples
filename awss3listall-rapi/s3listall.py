@@ -11,7 +11,7 @@ import botocore
 
 def main():
 
-# Instantiate the service resource object
+  # Instantiate the service resource object
   s3resource = boto3.resource('s3')
 
   print('Listing S3 buckets and objects ...')
