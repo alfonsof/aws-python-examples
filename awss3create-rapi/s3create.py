@@ -47,6 +47,8 @@ def main():
       print("Error: Bucket already created and owned by you!!")
     elif e.response['Error']['Code'] == "BucketAlreadyExists":
       print("Error: Bucket already exist!!")
+    elif e.response['Error']['Code'] == "InvalidBucketName":
+      print("Error: Invalid Bucket name!!")
     else:
       raise
 

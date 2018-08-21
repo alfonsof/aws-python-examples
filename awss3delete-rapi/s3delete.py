@@ -38,6 +38,10 @@ def main():
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "NoSuchBucket":
       print("Error: Bucket does not exist!!")
+    elif e.response['Error']['Code'] == "InvalidBucketName":
+      print("Error: Invalid Bucket name!!")
+    elif e.response['Error']['Code'] == "AllAccessDisabled":
+      print("Error: You do not have access to the Bucket!!")
     else:
       raise
 
