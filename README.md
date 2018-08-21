@@ -22,7 +22,7 @@ The code for the samples is contained in individual folders on this repository. 
   * [awss3delete-rapi](/awss3delete-rapi) - AWS S3 Delete (Resource API): Example of how to handle S3 buckets and delete a S3 bucket using the Resource API (high-level).
   * [awss3listall-rapi](/awss3listall-rapi) - AWS S3 List All (Resource API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Resource API (high-level).
   * [awss3list-rapi](/awss3list-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Resource API (high-level).
-  * [awss3upload-capi](/awss3upload-capi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Resource API (high-level).
+  * [awss3upload-rapi](/awss3upload-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Resource API (high-level).
 
 For instructions on running the code, please consult the README in each folder.
 
