@@ -23,10 +23,10 @@ def main():
   bucket_name = args[0]
   print('Bucket name: ' + bucket_name)
 
-# Instantiate the service resource object
+  # Instantiate the service resource object
   s3resource = boto3.resource('s3')
 
-#  Instantiate the bucket object
+  #  Instantiate the bucket object
   bucket = s3resource.Bucket(bucket_name)
 
   print('Listing objects ...')
