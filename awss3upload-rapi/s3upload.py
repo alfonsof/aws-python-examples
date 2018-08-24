@@ -10,6 +10,7 @@
 # LOCAL_FILE_NAME = Local file name
 
 import sys
+import os
 import boto3
 import botocore
 
@@ -32,6 +33,10 @@ def main():
 
   # Instantiate the service resource object
   s3resource = boto3.resource('s3')
+
+  if not os.path.isfile(upload_file_name):
+    print("Error: File Not Found!!")
+    exit (1)
 
   try:
     #  Instantiate the bucket object
