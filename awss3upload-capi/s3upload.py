@@ -10,6 +10,7 @@
 # LOCAL_FILE_NAME = Local file name
 
 import sys
+import os
 import boto3
 import botocore
 
@@ -32,6 +33,10 @@ def main():
 
   # Create an S3 Client
   s3client = boto3.client('s3')
+
+  if not os.path.isfile(upload_file_name):
+    print("Error: File Not Found!!")
+    exit (1)
 
   # Upload object
   try:
