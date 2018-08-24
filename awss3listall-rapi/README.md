@@ -12,7 +12,7 @@ List information about all S3 buckets and the objects they contain using the Res
 
   Boto3 offers two different styles of API:
 
-  * Resource API (high-level): It provides an object-oriented abstraction on top (object.delete(), object.put())
+  * Resource API (high-level): It provides an object-oriented abstraction on top (object.delete(), object.put(), etc.).
   * Client API (low-level): It maps directly to the underlying RPC-style service operations (put_object, delete_object, etc.).
 
 ## Using the code
