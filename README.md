@@ -2,7 +2,7 @@
 
 This repo contains Python code examples on AWS (Amazon Web Services).
 
-These examples show how to use Resource API (high-level) and Client API (low-level) of Boto 3 in order to manage Amazon services on AWS.
+These examples show how to use Python 3 and Boto 3 in order to manage Amazon services on AWS. These use Resource API (high-level) and Client API (low-level) of Boto 3.
 
 Boto is the AWS (Amazon Web Services) SDK for Python, which allows Python developers to write software that makes use of Amazon services like S3 and EC2. Boto provides an easy to use, object-oriented API as well as low-level direct service access.
 
