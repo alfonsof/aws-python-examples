@@ -41,12 +41,10 @@ def main():
     bucket.download_file(key_name, download_file_name)
     print('\nDownloaded')
   except botocore.exceptions.ClientError as e:
-    if e.response['Error']['Code'] == "NoSuchBucket":
-      print("Error: Bucket does not exist!!")
-    elif e.response['Error']['Code'] == "InvalidBucketName":
-      print("Error: Invalid Bucket name!!")
-    elif e.response['Error']['Code'] == "AllAccessDisabled":
-      print("Error: You do not have access to the Bucket!!")
+    if e.response['Error']['Code'] == "404":
+      print("Error: Not Found, problem with the parameters!!")
+    elif e.response['Error']['Code'] == "400":
+      print("Error: Bad request, problem with the bucket!!")
     else:
       raise
 
