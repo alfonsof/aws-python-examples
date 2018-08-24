@@ -60,8 +60,6 @@ Copy an object from a S3 bucket to another S3 bucket using the Client API (low-l
     set AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
     ```
 
-* You can select the bucket region changing the value of `region` variable in the code.
-
 * Create a S3 bucket for the source and another S3 bucket for the target.
 
 * Copy a file to the source S3 bucket.

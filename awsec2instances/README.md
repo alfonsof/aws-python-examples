@@ -1,14 +1,14 @@
-# AWS S3 Move Python example
+# AWS S3 Copy Python example
 
 This folder contains a Python application example that handles S3 buckets on AWS (Amazon Web Services).
 
-Move an object from a S3 bucket to another S3 bucket using the Resource API (high-level).
+Copy an object from a S3 bucket to another S3 bucket using the Client API (low-level).
 
 ## Requirements
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
 * The code was written for Python 3.7 and AWS SDK for Python (Boto3).
-* This example uses Resource API (high-level) of Boto3.
+* This example uses Client API (low-level) of Boto3.
 
   Boto3 offers two different styles of API:
 
@@ -60,6 +60,8 @@ Move an object from a S3 bucket to another S3 bucket using the Resource API (hig
     set AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
     ```
 
+* You can select the bucket region changing the value of `region` variable in the code.
+
 * Create a S3 bucket for the source and another S3 bucket for the target.
 
 * Copy a file to the source S3 bucket.
@@ -75,9 +77,9 @@ Move an object from a S3 bucket to another S3 bucket using the Resource API (hig
   Run application:
 
   ```bash
-  python s3move.py bucket-name source-bucket source-file destination-bucket
+  python s3copy.py bucket-name source-bucket source-file destination-bucket
   ```
 
 * Test the application.
 
-  The object from the source S3 bucket should be copied to the target S3 bucket and deleted in the source S3 bucket.
+  The object from the source S3 bucket should be copied to the target S3 bucket.
