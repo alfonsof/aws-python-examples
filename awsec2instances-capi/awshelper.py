@@ -16,7 +16,6 @@ def describe_instances():
   """
   # Create an EC2 Client
   ec2client = boto3.client('ec2', region_name=region)
-
   # Describe instances
   response = ec2client.describe_instances()
   print(response)
@@ -64,10 +63,11 @@ def describe_instance(instance_id):
     print('Image Id:         ' + response['Reservations'][0]['Instances'][0]['ImageId'])
     print('Instance Type:    ' + response['Reservations'][0]['Instances'][0]['InstanceType'])
     print('State:            ' + response['Reservations'][0]['Instances'][0]['State']['Name'])
-    print('Private DNS Name: ' + response['Reservations'][0]['Instances'][0]['PrivateDnsName'])
-    print('Private IP:       ' + response['Reservations'][0]['Instances'][0]['PrivateIpAddress'])
-    print('Public DNS Name:  ' + response['Reservations'][0]['Instances'][0]['PublicDnsName'])
-    print('Public IP:        ' + response['Reservations'][0]['Instances'][0]['PublicIpAddress'])
+    if response['Reservations'][0]['Instances'][0]['State']['Name'] == 'running':
+      print('Private DNS Name: ' + response['Reservations'][0]['Instances'][0]['PrivateDnsName'])
+      print('Private IP:       ' + response['Reservations'][0]['Instances'][0]['PrivateIpAddress'])
+      print('Public DNS Name:  ' + response['Reservations'][0]['Instances'][0]['PublicDnsName'])
+      print('Public IP:        ' + response['Reservations'][0]['Instances'][0]['PublicIpAddress'])
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "MissingParameter":
       print("Error: Missing instance id!!")
