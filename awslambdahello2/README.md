@@ -50,5 +50,7 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
   You should see the next message in the log:
 
   ```bash
-  "Hello Peter"
+  {
+    "message": "Hello Peter Parker!"
+  }
   ```
