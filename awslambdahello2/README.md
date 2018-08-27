@@ -43,9 +43,11 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
   }
   ```
 
-* Test the AWS Lambda function:
+* Run the code.
 
   Run the code in a AWS lambda function using the test button.
+
+* Test the AWS Lambda function.
 
   You should see the next message in the log:
 
