@@ -15,7 +15,7 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
 
 * Select AWS Lambda in the services menu.
 
-* Create an AWS lambda function:
+* Create an AWS lambda function.
   * Name:    <LAMBDA_NAME>
   * Runtime: Python 3.6
   * Role:    lambda-basic-execution
@@ -32,7 +32,7 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
 
   The content of `lambda_function.py` file.
 
-* Create and configure a Test event:
+* Create and configure a Test event.
 
   Input file content:
 
@@ -45,7 +45,7 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
 
 * Run the code.
 
-  Run the code in a AWS lambda function using the test button.
+  Run the code in an AWS lambda function using the test button.
 
 * Test the AWS Lambda function.
 
