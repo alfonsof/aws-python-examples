@@ -17,27 +17,32 @@ You must have an [AWS (Amazon Web Services)](http://aws.amazon.com/) account.
 
 The code for the samples is contained in individual folders on this repository. You can see the list:
 
+**Compute - Amazon EC2:**
+
+* [awsec2instances-capi](/awsec2instances-capi) - AWS EC2 instances (Client API): Example of how to handle AWS EC2 instances using the Client API (low-level) of Boto 3.
+* [awsec2instances-rapi](/awsec2instances-rapi) - AWS EC2 instances (Resource API): Example of how to handle AWS EC2 instances using the Resource API (high-level) of Boto 3.
+
 **Storage - Amazon S3:**
 
-* Using the Boto3 Client API (low-level)
-  * [awss3create-capi](/awss3create-capi) - AWS S3 Create (Client API): Example of how to handle S3 buckets and create a new S3 bucket using the Client API (low-level).
-  * [awss3delete-capi](/awss3delete-capi) - AWS S3 Delete (Client API): Example of how to handle S3 buckets and delete a  S3 bucket using the Client API (low-level).
-  * [awss3listall-capi](/awss3listall-capi) - AWS S3 List All (Client API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Client API (low-level).
-  * [awss3list-capi](/awss3list-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Client API (low-level).
-  * [awss3copy-capi](/awss3copy-capi) - AWS S3 Copy (Client API): Example of how to handle S3 buckets and copy an object from a S3 bucket to another S3 bucket using the Client API (low-level).
-  * [awss3move-capi](/awss3move-capi) - AWS S3 Move (Client API): Example of how to handle S3 buckets and move an object from a S3 bucket to another S3 bucket using the Client API (low-level).
-  * [awss3upload-capi](/awss3upload-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Client API (low-level).
-  * [awss3download-capi](/awss3download-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and download an object from a S3 bucket to a local file using the Client API (low-level).
+* Using the Client API (low-level) of Boto 3:
+  * [awss3create-capi](/awss3create-capi) - AWS S3 Create (Client API): Example of how to handle S3 buckets and create a new S3 bucket using the Client API (low-level) of Boto 3.
+  * [awss3delete-capi](/awss3delete-capi) - AWS S3 Delete (Client API): Example of how to handle S3 buckets and delete a  S3 bucket using the Client API (low-level) of Boto 3.
+  * [awss3listall-capi](/awss3listall-capi) - AWS S3 List All (Client API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Client API (low-level) of Boto 3.
+  * [awss3list-capi](/awss3list-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Client API (low-level) of Boto 3.
+  * [awss3copy-capi](/awss3copy-capi) - AWS S3 Copy (Client API): Example of how to handle S3 buckets and copy an object from a S3 bucket to another S3 bucket using the Client API (low-level) of Boto 3.
+  * [awss3move-capi](/awss3move-capi) - AWS S3 Move (Client API): Example of how to handle S3 buckets and move an object from a S3 bucket to another S3 bucket using the Client API (low-level) of Boto 3.
+  * [awss3upload-capi](/awss3upload-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Client API (low-level) of Boto 3.
+  * [awss3download-capi](/awss3download-capi) - AWS S3 List (Client API): Example of how to handle S3 buckets and download an object from a S3 bucket to a local file using the Client API (low-level) of Boto 3.
 
-* Using the Boto3 Resource API (high-level)
-  * [awss3create-rapi](/awss3create-rapi) - AWS S3 Create (Resource API): Example of how to handle S3 buckets and create a new S3 bucket using the Resource API (high-level).
-  * [awss3delete-rapi](/awss3delete-rapi) - AWS S3 Delete (Resource API): Example of how to handle S3 buckets and delete a S3 bucket using the Resource API (high-level).
-  * [awss3listall-rapi](/awss3listall-rapi) - AWS S3 List All (Resource API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Resource API (high-level).
-  * [awss3list-rapi](/awss3list-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Resource API (high-level).
-  * [awss3copy-rapi](/awss3copy-rapi) - AWS S3 Copy (Resource API): Example of how to handle S3 buckets and copy an object from a S3 bucket to another S3 bucket using the Resource API (high-level).
-  * [awss3move-rapi](/awss3move-rapi) - AWS S3 Move (Resource API): Example of how to handle S3 buckets and move an object from a S3 bucket to another S3 bucket using the Resource API (high-level).
-  * [awss3upload-rapi](/awss3upload-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Resource API (high-level).
-  * [awss3download-rapi](/awss3download-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and download an object from a S3 bucket to a local file using the Resource API (high-level).
+* Using the Resource API (high-level) of Boto 3:
+  * [awss3create-rapi](/awss3create-rapi) - AWS S3 Create (Resource API): Example of how to handle S3 buckets and create a new S3 bucket using the Resource API (high-level) of Boto 3.
+  * [awss3delete-rapi](/awss3delete-rapi) - AWS S3 Delete (Resource API): Example of how to handle S3 buckets and delete a S3 bucket using the Resource API (high-level) of Boto 3.
+  * [awss3listall-rapi](/awss3listall-rapi) - AWS S3 List All (Resource API): Example of how to handle S3 buckets and list information about all S3 buckets and the objects they contain using the Resource API (high-level) of Boto 3.
+  * [awss3list-rapi](/awss3list-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and list information about objects in a S3 bucket using the Resource API (high-level) of Boto 3.
+  * [awss3copy-rapi](/awss3copy-rapi) - AWS S3 Copy (Resource API): Example of how to handle S3 buckets and copy an object from a S3 bucket to another S3 bucket using the Resource API (high-level) of Boto 3.
+  * [awss3move-rapi](/awss3move-rapi) - AWS S3 Move (Resource API): Example of how to handle S3 buckets and move an object from a S3 bucket to another S3 bucket using the Resource API (high-level) of Boto 3.
+  * [awss3upload-rapi](/awss3upload-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and upload a local file to a S3 bucket using the Resource API (high-level) of Boto 3.
+  * [awss3download-rapi](/awss3download-rapi) - AWS S3 List (Resource API): Example of how to handle S3 buckets and download an object from a S3 bucket to a local file using the Resource API (high-level) of Boto 3.
 
 For instructions on running the code, please consult the README in each folder.
 

@@ -2,13 +2,13 @@
 
 This folder contains a Python application example that handles S3 buckets on AWS (Amazon Web Services).
 
-List information about all S3 buckets and the objects they contain using the Client API (low-level).
+List information about all S3 buckets and the objects they contain using the Client API (low-level) of Boto 3.
 
 ## Requirements
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
-* The code was written for Python 3.7 and AWS SDK for Python (Boto3).
-* This example uses Client API (low-level) of Boto3.
+* The code was written for Python 3 and AWS SDK for Python (Boto3).
+* This example uses Client API (low-level) of Boto 3.
 
   Boto3 offers two different styles of API:
 

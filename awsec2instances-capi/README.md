@@ -2,6 +2,8 @@
 
 This folder contains a Python application example that handles EC2 instances on AWS (Amazon Web Services).
 
+Manage Amazon EC2 Instances using the Client API (low-level) of Boto 3.
+
 ## Requirements
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
