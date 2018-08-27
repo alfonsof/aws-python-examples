@@ -8,13 +8,6 @@ Delete a S3 bucket using the Resource API (high-level) of Boto 3.
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
 * The code was written for Python 3 and AWS SDK for Python (Boto3).
-* This example uses Resource API (high-level) of Boto 3.
-
-  Boto3 offers two different styles of API:
-
-  * Resource API (high-level): It provides an object-oriented abstraction on top (object.delete(), object.put(), etc.).
-  * Client API (low-level): It maps directly to the underlying RPC-style service operations (put_object, delete_object, etc.).
-
 * Install the AWS SDK for Python (Boto3).
 
   Install the latest Boto 3 release via pip:
@@ -22,6 +15,13 @@ Delete a S3 bucket using the Resource API (high-level) of Boto 3.
   ```bash
   pip install boto3
   ```
+
+* This example uses Resource API (high-level) of Boto 3.
+
+  Boto3 offers two different styles of API:
+
+  * Resource API (high-level): It provides an object-oriented abstraction on top (object.delete(), object.put(), etc.).
+  * Client API (low-level): It maps directly to the underlying RPC-style service operations (put_object, delete_object, etc.).
 
 ## Using the code
 
