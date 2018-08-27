@@ -15,6 +15,14 @@ Copy an object from a S3 bucket to another S3 bucket using the Client API (low-l
   * Resource API (high-level): It provides an object-oriented abstraction on top (object.delete(), object.put(), etc.).
   * Client API (low-level): It maps directly to the underlying RPC-style service operations (put_object, delete_object, etc.).
 
+* Install the AWS SDK for Python (Boto3).
+
+  Install the latest Boto 3 release via pip:
+
+  ```bash
+  pip install boto3
+  ```
+
 ## Using the code
 
 * Configure your AWS access keys.
