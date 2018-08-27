@@ -2,7 +2,7 @@
 
 This folder contains an AWS Lambda Function example in Python on AWS (Amazon Web Services).
 
-It handles a simple AWS Lambda function that shows the content of the call to the lambda function and returns a message including this content.
+It handles a simple AWS Lambda function that shows the content (text) of the call to the lambda function and returns a message including this content.
 
 ## Requirements
 

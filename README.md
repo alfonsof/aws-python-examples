@@ -22,6 +22,11 @@ The code for the samples is contained in individual folders on this repository. 
 * [awsec2instances-capi](/awsec2instances-capi) - AWS EC2 instances (Client API): Example of how to handle AWS EC2 instances using the Client API (low-level) of Boto 3.
 * [awsec2instances-rapi](/awsec2instances-rapi) - AWS EC2 instances (Resource API): Example of how to handle AWS EC2 instances using the Resource API (high-level) of Boto 3.
 
+**Compute - AWS Lambda:**
+
+* [awslambdahello](/awslambdahello) - AWS Lambda Function Hello World: Example of how to handle an AWS simple Lambda function and a text input.
+* [awslambdahello2](/awslambdahello2) - AWS Lambda Function other Hello World: Example of how to handle an AWS simple Lambda  function and a JSON input.
+
 **Storage - Amazon S3:**
 
 * Using the Client API (low-level) of Boto 3:
