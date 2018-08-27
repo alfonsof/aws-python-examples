@@ -15,7 +15,7 @@ It handles a simple AWS Lambda function that shows the content (text) of the cal
 
 * Select AWS Lambda in the services menu.
 
-* Create an AWS lambda function:
+* Create an AWS lambda function.
   * Name:    <LAMBDA_NAME>
   * Runtime: Python 3.6
   * Role:    lambda-basic-execution
