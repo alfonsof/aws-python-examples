@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # awshelper.py
-# awshelper has methods for managing AWS EC2 instances
-# It uses Resource API (high-level) of Boto3
+# It has methods for managing AWS EC2 instances.
+# It uses Resource API (high-level) of Boto3.
 
 import sys
 import boto3

@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3create.py
-# s3create is an example that handles S3 buckets on AWS
-# It uses Resource API (high-level) of Boto3
-# Create a new S3 bucket
+# It is an example that handles S3 buckets on AWS.
+# It uses Resource API (high-level) of Boto3.
+# Create a new S3 bucket.
 # You must provide 1 parameter:
 # BUCKET_NAME = Name of the bucket
 

@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3copy.py
-# s3copy is an example that handles S3 buckets on AWS
-# It uses Resource API (high-level) of Boto3
-# Copy a object from a S3 bucket to another S3 bucket
+# It is an example that handles S3 buckets on AWS.
+# It uses Resource API (high-level) of Boto3.
+# Copy a object from a S3 bucket to another S3 bucket.
 # You must provide 3 parameters:
 # SOURCE_BUCKET      = Source bucket name
 # SOURCE_FILE        = Source file name

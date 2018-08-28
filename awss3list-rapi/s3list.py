@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3list.py
-# s3list is an example that handles S3 buckets on AWS
-# It uses Resource API (high-level) of Boto3
-# List information about the objects in a S3 bucket
+# It is an example that handles S3 buckets on AWS.
+# It uses Resource API (high-level) of Boto3.
+# List information about the objects in a S3 bucket.
 # You must provide 1 parameter:
 # BUCKET_NAME = Name of the bucket
 

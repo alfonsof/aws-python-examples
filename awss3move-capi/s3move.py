@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3move.py
-# s3move is an example that handles S3 buckets on AWS
-# It uses Client API (low-level) of Boto3
-# Move a object from a S3 bucket to another S3 bucket
+# It is an example that handles S3 buckets on AWS.
+# It uses Client API (low-level) of Boto3.
+# Move a object from a S3 bucket to another S3 bucket.
 # You must provide 3 parameters:
 # SOURCE_BUCKET      = Source bucket name
 # SOURCE_FILE        = Source file name

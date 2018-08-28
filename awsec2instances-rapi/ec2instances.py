@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # ec2instances.py
-# ec2instances is an example of how to handle AWS EC2 instances
-# It uses Resource API (high-level) of Boto3
+# It is an example of how to handle AWS EC2 instances.
+# It uses Resource API (high-level) of Boto3.
 
 import sys
 import awshelper

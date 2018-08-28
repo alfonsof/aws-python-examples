@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3delete.py
-# s3delete is an example that handles S3 buckets on AWS
-# It uses Client API (low-level) of Boto3
-# Delete a S3 bucket
+# It is an example that handles S3 buckets on AWS.
+# It uses Client API (low-level) of Boto3.
+# Delete a S3 bucket.
 # You must provide 1 parameter:
 # BUCKET_NAME = Name of the bucket
 

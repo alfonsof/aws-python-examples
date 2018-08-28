@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3listall.py
-# s3listall is an example that handles S3 buckets on AWS
-# It uses Client API (low-level) of Boto3
-# List information about all S3 buckets and the objects they contain
+# It is an example that handles S3 buckets on AWS.
+# It uses Client API (low-level) of Boto3.
+# List information about all S3 buckets and the objects they contain.
 
 import sys
 import boto3

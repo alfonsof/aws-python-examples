@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # s3download.py
-# s3download is an example that handles S3 buckets on AWS
-# It uses Resource API (high-level) of Boto3
-# Download an object from a S3 bucket to a local file
-# You must provide 1 parameter:
+# It is an example that handles S3 buckets on AWS.
+# It uses Resource API (high-level) of Boto3.
+# Download an object from a S3 bucket to a local file.
+# You must provide 3 parameters:
 # BUCKET_NAME     = Name of the bucket
 # OBJECT_NAME     = Object file name in the bucket
 # LOCAL_FILE_NAME = Local file name
