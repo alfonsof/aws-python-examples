@@ -15,7 +15,11 @@ Boto 3 offers two different styles of API:
 
 You must have an [AWS (Amazon Web Services)](http://aws.amazon.com/) account.
 
-The code for the samples is contained in individual folders on this repository. You can see the list:
+The code for the samples is contained in individual folders on this repository.
+
+For instructions on running the code, please consult the README in each folder.
+
+This is the list of examples:
 
 **Compute - Amazon EC2:**
 
@@ -49,8 +53,6 @@ The code for the samples is contained in individual folders on this repository. 
   * [awss3copy-rapi](/awss3copy-rapi) - AWS S3 Copy (Resource API): Example of how to handle S3 buckets and copy an object from a S3 bucket to another S3 bucket using the Resource API (high-level) of Boto 3.
   * [awss3move-rapi](/awss3move-rapi) - AWS S3 Move (Resource API): Example of how to handle S3 buckets and move an object from a S3 bucket to another S3 bucket using the Resource API (high-level) of Boto 3.
   
-For instructions on running the code, please consult the README in each folder.
-
 ## License
 
 This code is released under the MIT License. See LICENSE file.
