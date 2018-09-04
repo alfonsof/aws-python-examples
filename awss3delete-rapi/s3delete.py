@@ -34,7 +34,7 @@ def main():
     print('Deleting bucket ...')
     response = bucket.delete()
     print(response)
-    print('Deleted')
+    print('\nDeleted')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "NoSuchBucket":
       print("Error: Bucket does not exist!!")

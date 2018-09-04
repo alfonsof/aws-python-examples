@@ -45,7 +45,7 @@ def main():
     # Delete the object from source bucket
     response = s3client.delete_object(Bucket=source_bucket_name, Key=source_key)
     print(response)
-    print('Moved')
+    print('\nMoved')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "404":
       print("Error: Not Found, problem with the parameters!!")

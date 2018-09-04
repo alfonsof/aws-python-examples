@@ -50,7 +50,7 @@ def main():
     source_obj = source_bucket.Object(source_key)
     response = source_obj.delete()
     print(response)
-    print('Moved')
+    print('\nMoved')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "404":
       print("Error: Not Found, problem with the parameters!!")

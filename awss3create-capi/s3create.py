@@ -13,7 +13,7 @@ import botocore
 
 def main():
 
-  region = 'eu-west-1'
+  REGION = 'eu-west-1'   # AWS region
 
   # Make a list of command line arguments, omitting the [0] element
   # which is the script itself.
@@ -34,11 +34,11 @@ def main():
     response = s3client.create_bucket(ACL='private',
                                       Bucket=bucket_name,
                                       CreateBucketConfiguration={
-                                        'LocationConstraint': region
+                                        'LocationConstraint': REGION
                                       }
                                     )
     print(response)
-    print('Created')
+    print('\nCreated')
     print(response['Location'])
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "BucketAlreadyOwnedByYou":
