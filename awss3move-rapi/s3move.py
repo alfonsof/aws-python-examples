@@ -3,10 +3,10 @@
 # s3move.py
 # It is an example that handles S3 buckets on AWS.
 # It uses Resource API (high-level) of Boto3.
-# Move a object from a S3 bucket to another S3 bucket.
+# Move an object from a S3 bucket to another S3 bucket.
 # You must provide 3 parameters:
 # SOURCE_BUCKET      = Source bucket name
-# SOURCE_FILE        = Source file name
+# SOURCE_OBJECT      = Source file name
 # DESTINATION_BUCKET = Destination bucket name
 
 import sys
@@ -19,7 +19,7 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 3:
-    print('Not enough parameters. Proper Usage is: python s3move.py <SOURCE_BUCKET> <SOURCE_FILE> <DESTINATION_BUCKET>')
+    print('Not enough parameters.\nProper Usage is: python s3move.py <SOURCE_BUCKET> <SOURCE_OBJECT> <DESTINATION_BUCKET>')
     sys.exit(1)
 
   source_bucket_name = args[0]
@@ -27,9 +27,9 @@ def main():
   destination_bucket_name = args[2]
   destination_key = source_key
   print('From - bucket: ' + source_bucket_name)
-  print('From - file:   ' + source_key)
+  print('From - object: ' + source_key)
   print('To   - bucket: ' + destination_bucket_name)
-  print('To   - file:   ' + destination_key)
+  print('To   - object: ' + destination_key)
 
   # Instantiate the service resource object
   s3resource = boto3.resource('s3')
@@ -50,7 +50,7 @@ def main():
     source_obj = source_bucket.Object(source_key)
     response = source_obj.delete()
     print(response)
-    print('\nMoved')
+    print('Moved')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "404":
       print("Error: Not Found, problem with the parameters!!")

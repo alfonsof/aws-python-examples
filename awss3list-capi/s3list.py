@@ -17,7 +17,7 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 1:
-    print('Not enough parameters. Proper Usage is: python s3list.py <BUCKET_NAME>')
+    print('Not enough parameters.\nProper Usage is: python s3list.py <BUCKET_NAME>')
     sys.exit(1)
 
   bucket_name = args[0]

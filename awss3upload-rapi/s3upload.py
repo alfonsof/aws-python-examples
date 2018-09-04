@@ -20,31 +20,31 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 3:
-    print('Not enough parameters. Proper Usage is: python s3upload.py <BUCKET_NAME> <OBJECT_NAME> <LOCAL_FILE_NAME>')
+    print('Not enough parameters.\nProper Usage is: python s3upload.py <BUCKET_NAME> <OBJECT_NAME> <LOCAL_FILE_NAME>')
     sys.exit(1)
 
   bucket_name = args[0]
   key_name = args[1]
-  upload_file_name = args[2]
+  local_file_name = args[2]
 
   print('Bucket:     ' + bucket_name)
   print('Object/Key: ' + key_name)
-  print('Local file: ' + upload_file_name)
+  print('Local file: ' + local_file_name)
 
   # Instantiate the service resource object
   s3resource = boto3.resource('s3')
 
-  if not os.path.isfile(upload_file_name):
+  if not os.path.isfile(local_file_name):
     print("Error: File Not Found!!")
     exit (1)
 
   try:
     #  Instantiate the bucket object
     bucket = s3resource.Bucket(bucket_name)
-    print('Uploading object...')
+    print('Uploading object ...')
     # Upload object
-    bucket.upload_file(upload_file_name, key_name)
-    print('\nUploaded')
+    bucket.upload_file(local_file_name, key_name)
+    print('Uploaded')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "NoSuchBucket":
       print("Error: Bucket does not exist!!")

@@ -17,7 +17,7 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 1:
-    print('Not enough parameters. Proper Usage is: python s3delete.py <BUCKET_NAME>')
+    print('Not enough parameters.\nProper Usage is: python s3delete.py <BUCKET_NAME>')
     sys.exit(1)
 
   bucket_name = args[0]
@@ -28,10 +28,10 @@ def main():
 
   # Delete the bucket object
   try:
-    print('Deleting bucket...')
+    print('Deleting bucket ...')
     response = s3client.delete_bucket(Bucket=bucket_name)
     print(response)
-    print('\nDeleted')
+    print('Deleted')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "NoSuchBucket":
       print("Error: Bucket does not exist!!")

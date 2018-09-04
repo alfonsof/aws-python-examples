@@ -19,16 +19,16 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 3:
-    print('Not enough parameters. Proper Usage is: python s3download.py <BUCKET_NAME> <OBJECT_NAME> <LOCAL_FILE_NAME>')
+    print('Not enough parameters.\nProper Usage is: python s3download.py <BUCKET_NAME> <OBJECT_NAME> <LOCAL_FILE_NAME>')
     sys.exit(1)
 
   bucket_name = args[0]
   key_name = args[1]
-  download_file_name = args[2]
+  local_file_name = args[2]
 
   print('Bucket:     ' + bucket_name)
   print('Object/Key: ' + key_name)
-  print('Local file: ' + download_file_name)
+  print('Local file: ' + local_file_name)
 
   # Instantiate the service resource object
   s3resource = boto3.resource('s3')
@@ -36,10 +36,10 @@ def main():
   try:
     #  Instantiate the bucket object
     bucket = s3resource.Bucket(bucket_name)
-    print('Downloading object...')
+    print('Downloading object ...')
     # Download object
-    bucket.download_file(key_name, download_file_name)
-    print('\nDownloaded')
+    bucket.download_file(key_name, local_file_name)
+    print('Downloaded')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "404":
       print("Error: Not Found, problem with the parameters!!")

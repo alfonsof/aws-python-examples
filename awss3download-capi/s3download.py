@@ -19,25 +19,25 @@ def main():
   # which is the script itself.
   args = sys.argv[1:]
   if len(args) < 3:
-    print('Not enough parameters. Proper Usage is: python s3download.py <BUCKET_NAME> <OBJECT_NAME> <LOCAL_FILE_NAME>')
+    print('Not enough parameters.\nProper Usage is: python s3download.py <BUCKET_NAME> <OBJECT_NAME> <LOCAL_FILE_NAME>')
     sys.exit(1)
 
   bucket_name = args[0]
   key_name = args[1]
-  download_file_name = args[2]
+  local_file_name = args[2]
 
   print('Bucket:     ' + bucket_name)
   print('Object/Key: ' + key_name)
-  print('Local file: ' + download_file_name)
+  print('Local file: ' + local_file_name)
 
   # Create an S3 Client
   s3client = boto3.client('s3')
 
   # Download object
   try:
-    print('Downloading object...')
-    s3client.download_file(bucket_name, key_name, download_file_name)
-    print('\nDownloaded')
+    print('Downloading object ...')
+    s3client.download_file(bucket_name, key_name, local_file_name)
+    print('Downloaded')
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "404":
       print("Error: Not Found, problem with the parameters!!")
