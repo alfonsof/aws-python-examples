@@ -7,6 +7,7 @@ It handles a simple AWS Lambda function that shows the content (text) of the cal
 ## Requirements
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
+
 * The code was written for Python 3.
 
 ## Using the code
