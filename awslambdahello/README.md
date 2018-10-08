@@ -33,6 +33,10 @@ It handles a simple AWS Lambda function that shows the content (text) of the cal
 
   The content of `lambda_function.py` file.
 
+* Save the Lambda function.
+
+  It deploys the Lambda function.
+
 * Create and configure a Test event:
 
   Input file content:
