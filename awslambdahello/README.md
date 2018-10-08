@@ -17,17 +17,17 @@ It handles a simple AWS Lambda function that shows the content (text) of the cal
 * Select AWS Lambda in the services menu.
 
 * Create an AWS lambda function.
-  * Name:    <LAMBDA_NAME>
-  * Runtime: Python 3.6
-  * Role:    lambda-basic-execution
-  * The triggers: Nothing
-  * The resources the function's role has access: Amazon CloudWatch Logs
-
-  Handler function:
-
-  ```bash
-  lambda_function.lambda_handler
-  ```
+  * Name: `<LAMBDA_NAME>`
+  * Runtime: `Python 3.6`
+  * Handler: `lambda_function.lambda_handler`
+  * Role: `lambda-basic-execution`
+  * The triggers:
+    * `Nothing`
+  * The resources that the function's role has access to:
+    * `Amazon CloudWatch Logs`
+  * Basic Settings for the lambda function:
+    * Memory (MB): `128`
+    * Timeout: `3 sec`
 
 * Write the code.
 

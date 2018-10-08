@@ -29,7 +29,7 @@ This is the list of examples:
 **Compute - AWS Lambda:**
 
 * [awslambdahello](/awslambdahello) - AWS Lambda Function Hello World: Example of how to handle an AWS simple Lambda function and a text input.
-* [awslambdahello2](/awslambdahello2) - AWS Lambda Function other Hello World: Example of how to handle an AWS simple Lambda  function and a JSON input.
+* [awslambdahellojson](/awslambdahellojson) - AWS Lambda Function Hello World JSON: Example of how to handle an AWS simple Lambda  function and a JSON input.
 
 **Storage - Amazon S3:**
 
