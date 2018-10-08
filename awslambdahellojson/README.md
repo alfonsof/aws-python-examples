@@ -39,7 +39,7 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
 
 * Create and configure a Test event.
 
-  Input file content:
+  Input JSON file content:
 
   ```bash
   {
