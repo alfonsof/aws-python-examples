@@ -30,6 +30,7 @@ This is the list of examples:
 
 * [awslambdahello](/awslambdahello) - AWS Lambda Function Hello World: Example of how to handle an AWS simple Lambda function and a text input.
 * [awslambdahellojson](/awslambdahellojson) - AWS Lambda Function Hello World JSON: Example of how to handle an AWS simple Lambda  function and a JSON input.
+* [awslambdas3event](/awslambdas3event) - AWS Lambda Function S3 Event: Example of how to handle an AWS Lambda Function and send information to the log about an object when it appears in a S3 bucket.
 
 **Storage - Amazon S3:**
 
