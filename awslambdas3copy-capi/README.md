@@ -90,6 +90,7 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
     * `Amazon CloudWatch`
     * `Amazon CloudWatch Logs`
     * `Amazon S3`
+      * Lambda obtained information from the policy statements: `Managed policy Policy-VM-buckets`
   * Basic Settings for the lambda function:
     * Memory (MB): `1024`
     * Timeout: `10 sec`
