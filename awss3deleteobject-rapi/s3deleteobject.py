@@ -35,9 +35,6 @@ def main():
   # Delete the bucket object
   try:
     print('Deleting object ...')
-    #  Instantiate the source bucket
-    bucket = s3resource.Bucket(bucket_name)
-    # Delete the object from bucket
     obj = bucket.Object(key_name)
     response = obj.delete()
     print(response)
