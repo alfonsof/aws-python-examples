@@ -18,7 +18,7 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
 
 * Create an AWS lambda function.
   * Name: `<LAMBDA_NAME>`
-  * Runtime: `Python 3.6`
+  * Runtime: `Python 3.8`
   * Handler: `lambda_function.lambda_handler`
   * Role: `lambda-basic-execution`
   * The triggers:
