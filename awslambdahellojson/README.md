@@ -43,8 +43,8 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
 
   ```bash
   {
-    "firstName": "Peter",
-    "lastName": "Parker"
+    "first_name": "Peter",
+    "last_name": "Parker"
   }
   ```
 
