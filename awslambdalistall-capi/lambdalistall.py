@@ -13,7 +13,7 @@ def main():
 
   REGION = 'eu-west-1'   # AWS region
 
-  # Create an Lambda Client
+  # Create a Lambda Client
   lambdaclient = boto3.client('lambda', region_name=REGION)
 
   # List lambda functions
