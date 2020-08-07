@@ -26,7 +26,7 @@ def main():
   function_name = args[0]
   print('Lambda function name: ' + function_name)
 
-  # Create an S3 Client
+  # Create a Lambda Client
   lambdaclient = boto3.client('lambda', region_name=REGION)
 
   # Invoke lambda function
