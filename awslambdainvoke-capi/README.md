@@ -1,8 +1,8 @@
 # AWS Lambda Function Invoke Python example
 
-This folder contains an AWS Lambda Function example in Python on AWS (Amazon Web Services).
+This folder contains a Python application example that handles Lambda functions on AWS (Amazon Web Services).
 
-It invokes a Lambda function using the Client API (low-level) of Boto 3.
+Invokes a Lambda function using the Client API (low-level) of Boto 3.
 
 ## Requirements
 
