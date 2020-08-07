@@ -71,7 +71,7 @@ It invokes a Lambda function using the Client API (low-level) of Boto 3.
 
 * You can select the bucket region changing the value of `REGION` variable in the code.
 
-* You can change the values of the payload to the Lambda function in the code (Payload):
+* You can change the values of the payload to the Lambda function in the code (payload):
 
 ```bash
   {
@@ -96,11 +96,11 @@ It invokes a Lambda function using the Client API (low-level) of Boto 3.
   
   * Function name
     
-    Ex.: `HelloJsonJava`
+    Ex.: `HelloJsonPython`
 
   * ARN value
   
-    Ex.: `arn:aws:lambda:eu-west-1:123456789012:function:HelloJsonJava`
+    Ex.: `arn:aws:lambda:eu-west-1:123456789012:function:HelloJsonPython`
   
     You can retrieve the ARN value by looking at the function in the AWS Console.
 
