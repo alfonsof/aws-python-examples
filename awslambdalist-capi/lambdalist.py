@@ -25,7 +25,7 @@ def main():
   function_name = args[0]
   print('Lambda function name: ' + function_name)
 
-  # Create an Lambda Client
+  # Create a Lambda Client
   lambdaclient = boto3.client('lambda', region_name=REGION)
 
   # List lambda function configuration
