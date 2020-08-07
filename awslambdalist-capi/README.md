@@ -1,6 +1,6 @@
 # AWS Lambda Function List Python example
 
-This folder contains an AWS Lambda Function example in Python on AWS (Amazon Web Services).
+This folder contains a Python application example that handles Lambda functions on AWS (Amazon Web Services).
 
 List information of a Lambda function using the Client API (low-level) of Boto 3.
 
