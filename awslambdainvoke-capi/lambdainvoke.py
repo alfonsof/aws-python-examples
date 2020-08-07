@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # lambdainvoke.py
-# It is an example that handles S3 buckets on AWS.
+# It is an example that handles Lambda functions on AWS.
 # It uses Client API (low-level) of Boto3.
 # Invoke a Lambda function.
 # You must provide 1 parameter:
@@ -48,6 +48,7 @@ def main():
     print(response)
     print('\nFunction response payload:')
     print(json.loads(response['Payload'].read()))
+
   except botocore.exceptions.ClientError as e:
     if e.response['Error']['Code'] == "ResourceNotFoundException":
       print("Error: Function Not Found!!")
