@@ -28,7 +28,7 @@ def main():
   # Create an S3 Client
   lambdaclient = boto3.client('lambda', region_name=REGION)
 
-  # Invoke lambda function
+  # List lambda function configuration
   try:
     print('Listing function ...')
 
