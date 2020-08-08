@@ -65,9 +65,10 @@ List all Lambda functions and their information using the Client API (low-level)
     set AWS_SECRET_ACCESS_KEY=<your_secret_access_key>
     ```
 
-* You can create a Lambda function on AWS.
+* You can create some Lambda functions on AWS.
 
   You can use the AWS Lambda Function Hello World JSON Java example: [awslambdahellojson](/awslambdahellojson).
+  You can use the AWS Lambda Function Hello World Java example: [awslambdahello](/awslambdahello).
 
 * You can select the AWS region of the Lambda functions changing the value of `REGION` variable in the code.
 
