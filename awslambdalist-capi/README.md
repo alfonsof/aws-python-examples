@@ -67,7 +67,7 @@ List information of a Lambda function using the Client API (low-level) of Boto 3
 
 * You can create a Lambda function on AWS.
 
-  You can use the AWS Lambda Function Hello World JSON Java example: [awslambdahellojson](/awslambdahellojson).
+  You can use the AWS Lambda Function Hello World JSON Python example: [awslambdahellojson](/awslambdahellojson).
 
 * You can select the AWS region of the Lambda function changing the value of `REGION` variable in the code.
 
