@@ -69,7 +69,7 @@ List all Lambda functions and their information using the Client API (low-level)
 
   You can use the AWS Lambda Function Hello World JSON Java example: [awslambdahellojson](/awslambdahellojson).
 
-* You can select the bucket region changing the value of `REGION` variable in the code.
+* You can select the AWS region of the Lambda functions changing the value of `REGION` variable in the code.
 
 * Run the code.
 

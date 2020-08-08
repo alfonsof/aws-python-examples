@@ -69,7 +69,7 @@ Invoke a Lambda function using the Client API (low-level) of Boto 3.
 
   You can use the AWS Lambda Function Hello World JSON Java example: [awslambdahellojson](/awslambdahellojson).
 
-* You can select the bucket region changing the value of `REGION` variable in the code.
+* You can select the AWS region of the Lambda function changing the value of `REGION` variable in the code.
 
 * You can change the values of the payload to the Lambda function in the code (payload):
 
@@ -92,17 +92,17 @@ Invoke a Lambda function using the Client API (low-level) of Boto 3.
   python lambdainvoke.py function-name
   ```
 
-  You can use as Lambda function name 2 options:
+  You can use as name of the Lambda function 2 name formats:
   
   * Function name
     
     Ex.: `HelloJsonPython`
 
-  * ARN value
+  * Function ARN
   
     Ex.: `arn:aws:lambda:eu-west-1:123456789012:function:HelloJsonPython`
   
-    You can retrieve the ARN value by looking at the function in the AWS Console.
+    You can retrieve the function ARN by looking at the function in the AWS Console.
 
 * Test the application.
 
