@@ -1,4 +1,4 @@
-# AWS Lambda Function List Python example
+# AWS Lambda Function List All Python example
 
 This folder contains a Python application example that handles Lambda functions on AWS (Amazon Web Services).
 
