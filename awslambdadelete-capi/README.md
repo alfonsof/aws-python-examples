@@ -2,7 +2,7 @@
 
 This folder contains a Python application example that handles Lambda functions on AWS (Amazon Web Services).
 
-Delete a Lambda function using the Client API (low-level) of Boto 3.
+Delete an AWS Lambda function using the Client API (low-level) of Boto 3.
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 This folder contains a Python application example that handles Lambda functions on AWS (Amazon Web Services).
 
-List all Lambda functions and their information using the Client API (low-level) of Boto 3.
+List all AWS Lambda functions and their information using the Client API (low-level) of Boto 3.
 
 ## Requirements
 
