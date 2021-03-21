@@ -103,9 +103,9 @@ Create an AWS Lambda function using the Client API (low-level) of Boto 3.
 
   For example:
 
- ```bash
- Creating function ...
- Created function "FunctionName" with ARN: "arn:aws:lambda:eu-west-1:123456789012:function:FunctionName"
- ```
+  ```bash
+  Creating function ...
+  Created function "FunctionName" with ARN: "arn:aws:lambda:eu-west-1:123456789012:function:FunctionName"
+  ```
 
   and the Lambda function created.
