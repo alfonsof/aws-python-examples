@@ -8,7 +8,10 @@ Manage Amazon EC2 Instances using the Resource API (high-level) of Boto 3.
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
 
-* The code was written for Python 3 and AWS SDK for Python (Boto3).
+* The code was written for:
+  
+  * Python 3
+  * AWS SDK for Python (Boto3)
 
 * This example uses Resource API (high-level) of Boto 3.
 

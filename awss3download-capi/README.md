@@ -8,7 +8,10 @@ Download an object from a S3 bucket to a local file using the Client API (low-le
 
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
 
-* The code was written for Python 3 and AWS SDK for Python (Boto3).
+* The code was written for:
+  
+  * Python 3
+  * AWS SDK for Python (Boto3)
 
 * This example uses Client API (low-level) of Boto 3.
 
