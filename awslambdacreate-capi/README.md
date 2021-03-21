@@ -72,11 +72,9 @@ Create an AWS Lambda function using the Client API (low-level) of Boto 3.
 
   You can use the code obtained from the AWS Lambda Function Hello World JSON Java example: [awslambdahellojson](/awslambdahellojson).
 
-  This application coverts the `.py` file in a `ZIP` file to deploy.
+  This application compresses the `.py` file in a `ZIP` file to deploy.
 
 * You can select the AWS region of the Lambda function changing the value of `REGION` variable in the code.
-
-* You can change the values of the payload to the Lambda function in the code (payload):
 
 * You have to create an AWS role that has Lambda permissions.
 
@@ -105,7 +103,7 @@ Create an AWS Lambda function using the Client API (low-level) of Boto 3.
 
   For example:
 
-  * `Creating function ...`
-  * `Created function "FunctionName" with ARN: "arn:aws:lambda:eu-west-1:123456789012:function:FunctionName"`
+  `Creating function ...`
+  `Created function "FunctionName" with ARN: "arn:aws:lambda:eu-west-1:123456789012:function:FunctionName"`
 
   and the Lambda function created.
