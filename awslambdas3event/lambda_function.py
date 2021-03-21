@@ -3,9 +3,9 @@
 # an object when it appears in a S3 bucket.
 
 def lambda_handler(event, context):
-  bucket_name = event['Records'][0]['s3']['bucket']['name']
-  key_name = event['Records'][0]['s3']['object']['key']
+    bucket_name = event['Records'][0]['s3']['bucket']['name']
+    key_name = event['Records'][0]['s3']['object']['key']
 
-  print("Input:", event)
-  print("Bucket:", bucket_name)
-  print("Object:", key_name)
+    print("Input:", event)
+    print("Bucket:", bucket_name)
+    print("Object:", key_name)

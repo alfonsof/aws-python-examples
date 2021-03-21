@@ -3,4 +3,4 @@
 # to the lambda function and returns a message including this content.
 
 def lambda_handler(event, context):
-  return 'Hello ' + event
+    return 'Hello ' + event

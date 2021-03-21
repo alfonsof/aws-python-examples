@@ -11,19 +11,19 @@ import botocore
 
 def main():
 
-  # Instantiate the service resource object
-  s3resource = boto3.resource('s3')
+    # Instantiate the service resource object
+    s3_resource = boto3.resource('s3')
 
-  print('Listing S3 buckets and objects ...')
-  # List buckets
-  for bucket in s3resource.buckets.all():
-    print('* Bucket: ' + bucket.name)
-    for s3object in bucket.objects.all():
-      print(' - Object: ' + s3object.key)
+    print('Listing S3 buckets and objects ...')
+    # List buckets
+    for bucket in s3_resource.buckets.all():
+        print('* Bucket: ' + bucket.name)
+        for s3object in bucket.objects.all():
+            print(' - Object: ' + s3object.key)
 
-  return
+    return
 
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
-  main()
+    main()
