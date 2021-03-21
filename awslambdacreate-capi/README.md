@@ -9,7 +9,7 @@ Create an AWS Lambda function using the Client API (low-level) of Boto 3.
 * You must have an [Amazon Web Services (AWS)](http://aws.amazon.com/) account.
 
 * The code was written for:
-  
+
   * Python 3
   * AWS SDK for Python (Boto3)
 
