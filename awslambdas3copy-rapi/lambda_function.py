@@ -3,6 +3,7 @@
 # in a S3 bucket to another S3 bucket.
 # It uses Resource API (high-level) of Boto3.
 
+import os
 import boto3
 import botocore
 
@@ -10,11 +11,14 @@ import botocore
 s3_resource = boto3.resource('s3')
 
 def lambda_handler(event, context):
-    DESTINATION_BUCKET = 'targetvm'      # Destination bucket name
-
     source_bucket_name = event['Records'][0]['s3']['bucket']['name']
     source_key = event['Records'][0]['s3']['object']['key']
-    destination_bucket_name = DESTINATION_BUCKET
+    # Retrieve environment variable TARGET_BUCKET
+    destination_bucket_name = os.environ.get('TARGET_BUCKET', None)
+    if destination_bucket_name is None:
+        # Environment variable TARGET_BUCKET does not exist
+        print('Error: TARGET_BUCKET Lambda environment variable does not exist!!')
+        return
     destination_key = source_key
     print('From - bucket: ' + source_bucket_name)
     print('From - object: ' + source_key)
