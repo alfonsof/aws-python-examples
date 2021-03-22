@@ -19,15 +19,20 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
 
 ## Using the code
 
-* You can select the destination bucket name changing the value of `DESTINATION_BUCKET` variable in the code.
+* You can select the destination bucket name using an AWS Lambda environment variable: `TARGET_BUCKET`
 
 * Access the AWS console.
 
 * Create a S3 bucket for the source and another S3 bucket for the target.
 
-* Create an IAM Policy: ex. `Policy-VM-buckets`
+* Create an IAM Policy: ex. `Policy-my-buckets`
 
-  Content of the IAM policy:
+   Changing: 
+  
+   * `sourcebucket` to the name of your source bucket.
+   * `targetbucket` to the name of your target bucket.
+
+   Content of the IAM policy:
 
   ```bash
   {
@@ -39,7 +44,7 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
                   "s3:GetObject"
               ],
               "Resource": [
-                  "arn:aws:s3:::sourcevm/*"
+                  "arn:aws:s3:::sourcebucket/*"
               ]
           },
           {
@@ -48,11 +53,10 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
                   "s3:PutObject"
               ],
               "Resource": [
-                  "arn:aws:s3:::targetvm/*"
+                  "arn:aws:s3:::targetbucket/*"
               ]
           },
           {
-              "Sid": "Stmt1430872844000",
               "Effect": "Allow",
               "Action": [
                   "cloudwatch:*"
@@ -62,7 +66,6 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
               ]
           },
           {
-              "Sid": "Stmt1430872852000",
               "Effect": "Allow",
               "Action": [
                   "logs:*"
@@ -75,15 +78,15 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
   }
   ```
 
-* Create a role: `Role-VM-buckets`.
+* Create a role: `Role-my-buckets`.
 
-  This role uses the policy `Policy-VM-buckets`
+  This role uses the policy `Policy-my-buckets`
 
 * Create an AWS lambda function.
   * Name: `<LAMBDA_NAME>`
-  * Runtime: `Python 3.6`
+  * Runtime: `Python 3.8`
   * Handler: `lambda_function.lambda_handler`
-  * Role: `Role-VM-buckets`
+  * Role: `Role-my-buckets`
   * The triggers:
     * `S3`
       * Bucket: `<BUCKET_NAME>`
@@ -93,13 +96,14 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
     * `Amazon CloudWatch`
     * `Amazon CloudWatch Logs`
     * `Amazon S3`
-      * Lambda obtained information from the policy statements: `Managed policy Policy-VM-buckets`:
-        * `s3:GetObject` --> `Allow: arn:aws:s3:::sourcevm/*`
-        * `s3:DeleteObject` --> `Allow: arn:aws:s3:::sourcevm/*`
-        * `s3:PutObject` --> `Allow: arn:aws:s3:::targetvm/*`
+      * Lambda obtained information from the policy statements: `Managed policy Policy-my-buckets`:
+        * `s3:GetObject` --> `Allow: arn:aws:s3:::sourcebucket/*`
+        * `s3:PutObject` --> `Allow: arn:aws:s3:::targetbucket/*`
   * Basic Settings for the lambda function:
     * Memory (MB): `1024`
     * Timeout: `10 sec`
+
+* Create the AWS Lambda environment variable `TARGET_BUCKET` and set its value to the name of your target bucket.
 
 * Write the code.
 
@@ -114,3 +118,14 @@ It handles an AWS Lambda function that copies an object when it appears in a S3 
   Copy a file in the source S3 bucket.
 
   The object from the source S3 bucket should be copied to the target S3 bucket.
+
+  You should see the next messages in the log:
+
+    ```bash
+    "From - bucket:: <SOURCE_BUCKET_NAME>"
+    "From - object: <SOURCE_FILE_NAME>"
+    "To - bucket: <TARGET_BUCKET_NAME>"
+    "To - object: <TARGET_FILE_NAME>"
+    "Copying object ..."
+    "Copied"
+    ```
