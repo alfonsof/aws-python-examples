@@ -18,7 +18,7 @@ It handles an AWS Lambda function that sends information to the log about an obj
 
 * Create an AWS lambda function.
   * Name: `<LAMBDA_NAME>`
-  * Runtime: `Python 3.6`
+  * Runtime: `Python 3.8`
   * Handler: `lambda_function.lambda_handler`
   * Role: `lambda-basic-execution`
   * The triggers:
