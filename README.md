@@ -31,23 +31,25 @@ This is the list of examples:
 
 **Compute - AWS Lambda:**
 
-* Common:
+* Lambda function handler:
   * [awslambdahello](/awslambdahello) - AWS Lambda Function Hello World: Example of how to handle an AWS simple Lambda function and a text input.
   * [awslambdahellojson](/awslambdahellojson) - AWS Lambda Function Hello World JSON: Example of how to handle an AWS simple Lambda  function and a JSON input.
   * [awslambdas3event](/awslambdas3event) - AWS Lambda Function S3 Event: Example of how to handle an AWS Lambda Function and send information to the log about an object when it appears in a S3 bucket.
 
-* Using the Client API (low-level) of Boto 3:
+* Lambda function handler using the Client API (low-level) of Boto 3:
   * [awslambdas3copy-capi](/awslambdas3copy-capi) - AWS Lambda Function S3 Copy: Example of how to handle an AWS Lambda function and copy an object when it appears in a S3 bucket to another S3 bucket. It uses the Client API (low-level) of Boto 3.
   * [awslambdas3move-capi](/awslambdas3move-capi) - AWS Lambda Function S3 Move: Example of how to handle an AWS Lambda function and move an object when it appears in a S3 bucket to another S3 bucket. It uses the Client API (low-level) of Boto 3.
+  
+* Lambda function handler using the Resource API (high-level) of Boto 3:
+  * [awslambdas3copy-rapi](/awslambdas3copy-rapi) - AWS Lambda Function S3 Copy: Example of how to handle an AWS Lambda function and copy an object when it appears in a S3 bucket to another S3 bucket. It uses the Resource API (high-level) of Boto 3.
+  * [awslambdas3move-rapi](/awslambdas3move-rapi) - AWS Lambda Function S3 Move: Example of how to handle an AWS Lambda function and move an object when it appears in a S3 bucket to another S3 bucket. It uses the Resource API (high-level) of Boto 3.
+
+* Lambda service client - Service operations - Using the Client API (low-level) of Boto 3:
   * [awslambdacreate-capi](/awslambdacreate-capi) - AWS Lambda Function Create: Example of how to handle an AWS Lambda function and create it. It uses the Client API (low-level) of Boto 3.
   * [awslambdainvoke-capi](/awslambdainvoke-capi) - AWS Lambda Function Invoke: Example of how to handle an AWS Lambda function and invoke it. It uses the Client API (low-level) of Boto 3.
   * [awslambdalist-capi](/awslambdalist-capi) - AWS Lambda Function List: Example of how to handle an AWS Lambda function and list its information. It uses the Client API (low-level) of Boto 3.
   * [awslambdalistall-capi](/awslambdalistall-capi) - AWS Lambda Function List All: Example of how to handle AWS Lambda functions and list all Lambda functions and their information. It uses the Client API (low-level) of Boto 3.
   * [awslambdadelete-capi](/awslambdadelete-capi) - AWS Lambda Function Delete: Example of how to handle an AWS Lambda function and delete it. It uses the Client API (low-level) of Boto 3.
-
-* Using the Resource API (high-level) of Boto 3:
-  * [awslambdas3copy-rapi](/awslambdas3copy-rapi) - AWS Lambda Function S3 Copy: Example of how to handle an AWS Lambda function and copy an object when it appears in a S3 bucket to another S3 bucket. It uses the Resource API (high-level) of Boto 3.
-  * [awslambdas3move-rapi](/awslambdas3move-rapi) - AWS Lambda Function S3 Move: Example of how to handle an AWS Lambda function and move an object when it appears in a S3 bucket to another S3 bucket. It uses the Resource API (high-level) of Boto 3.
 
 **Storage - Amazon S3:**
 
