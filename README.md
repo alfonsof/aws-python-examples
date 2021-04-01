@@ -46,6 +46,7 @@ This is the list of examples:
 
 * Lambda service client - Service operations - Using the Client API (low-level) of Boto 3:
   * [awslambdacreate-capi](/awslambdacreate-capi) - AWS Lambda Function Create: Example of how to handle an AWS Lambda function and create it. It uses the Client API (low-level) of Boto 3.
+  * [awslambdaupdate-capi](/awslambdaupdate-capi) - AWS Lambda Function Update: Example of how to handle an AWS Lambda function and update it. It uses the Client API (low-level) of Boto 3.
   * [awslambdainvoke-capi](/awslambdainvoke-capi) - AWS Lambda Function Invoke: Example of how to handle an AWS Lambda function and invoke it. It uses the Client API (low-level) of Boto 3.
   * [awslambdalist-capi](/awslambdalist-capi) - AWS Lambda Function List: Example of how to handle an AWS Lambda function and list its information. It uses the Client API (low-level) of Boto 3.
   * [awslambdalistall-capi](/awslambdalistall-capi) - AWS Lambda Function List All: Example of how to handle AWS Lambda functions and list all Lambda functions and their information. It uses the Client API (low-level) of Boto 3.
