@@ -40,7 +40,7 @@ def main():
     args = sys.argv[1:]
     if len(args) < 4:
         print('Not enough parameters.\n'\
-              'Proper Usage is: python lambdainvoke.py '\
+              'Proper Usage is: python lambdacreate.py '\
               '<FUNCTION_NAME> <FUNCTION_FILE<> <FUNCTION_ROLE> <FUNCTION_HANDLER>')
         sys.exit(1)
 
