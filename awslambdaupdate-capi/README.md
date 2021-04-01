@@ -111,3 +111,4 @@ Update an AWS Lambda function using the Client API (low-level) of Boto 3.
   * `Updated function "FunctionName"`
 
   And the Lambda function updated.
+  
