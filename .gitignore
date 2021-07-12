@@ -102,3 +102,22 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# IntelliJ, PyCharm
+.idea/
+*.iml
+*.iws
+target/
+out/
+
+# Visual Studio Code
+.vscode/
+
+# Package Files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Mac
+.DS_Store
