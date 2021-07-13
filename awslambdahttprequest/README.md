@@ -26,6 +26,9 @@ It handles an AWS Lambda function that it is invoked by an http request. It show
     * Timeout: `3 sec`
   * The resources that the function's role has access to:
     * `Amazon CloudWatch Logs`
+  * The triggers:
+    * `API Gateway`
+      * Details below.
 
 * Write the code of the Lambda funtion.
 
