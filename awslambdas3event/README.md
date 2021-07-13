@@ -21,16 +21,16 @@ It handles an AWS Lambda function that sends information to the log about an obj
   * Runtime: `Python 3.8`
   * Handler: `lambda_function.lambda_handler`
   * Role: `lambda-basic-execution`
+  * Runtime Settings for the lambda function:
+    * Memory (MB): `128`
+    * Timeout: `3 sec`
+  * The resources that the function's role has access to:
+    * `Amazon CloudWatch Logs`
   * The triggers:
     * `S3`
       * Bucket: `<BUCKET_NAME>`
       * Event type: `ObjectCreated`
       * Enable trigger: `Yes`
-  * The resources that the function's role has access to:
-    * `Amazon CloudWatch Logs`
-  * Basic Settings for the lambda function:
-    * Memory (MB): `128`
-    * Timeout: `3 sec`
 
 * Write the code.
 

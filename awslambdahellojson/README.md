@@ -21,13 +21,13 @@ It handles a simple AWS Lambda function that shows the content (JSON) of the cal
   * Runtime: `Python 3.8`
   * Handler: `lambda_function.lambda_handler`
   * Role: `lambda-basic-execution`
-  * The triggers:
-    * `Nothing`
-  * The resources that the function's role has access to:
-    * `Amazon CloudWatch Logs`
-  * Basic Settings for the lambda function:
+  * Runtime Settings for the lambda function:
     * Memory (MB): `128`
     * Timeout: `3 sec`
+  * The resources that the function's role has access to:
+    * `Amazon CloudWatch Logs`
+  * The triggers:
+    * `Nothing`
 
 * Write the code.
 
