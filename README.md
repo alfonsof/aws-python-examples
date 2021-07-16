@@ -34,7 +34,7 @@ This is the list of examples:
 * Lambda function handler:
   * [awslambdahello](/awslambdahello) - AWS Lambda Function Hello World: Example of how to handle an AWS simple Lambda function and a text input.
   * [awslambdahellojson](/awslambdahellojson) - AWS Lambda Function Hello World JSON: Example of how to handle an AWS simple Lambda  function and a JSON input.
-  * [awslambdahttprequest](/awslambdahttprequest) - AWS Lambda Function Http Request: Example of how to handle an AWS Lambda Function, show the parameters of the request and reponds a message including the parameters.
+  * [awslambdahttprequest](/awslambdahttprequest) - AWS Lambda Function Http Request: Example of how to handle an AWS Lambda Function, show the parameters of the request and repond a message including the parameters.
   * [awslambdas3event](/awslambdas3event) - AWS Lambda Function S3 Event: Example of how to handle an AWS Lambda Function and send information to the log about an object when it appears in a S3 bucket.
 
 * Lambda function handler using the Client API (low-level) of Boto 3:

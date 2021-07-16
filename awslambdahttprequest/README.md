@@ -2,7 +2,7 @@
 
 This folder contains an AWS Lambda Function example in Python on AWS (Amazon Web Services).
 
-It handles an AWS Lambda function that it is invoked by an http request. It shows the parameters of the request and reponds a message including the parameters.
+It handles an AWS Lambda function that it is invoked by an http request. It shows the parameters of the request and responds a message including the parameters.
 
 ## Requirements
 
@@ -90,7 +90,7 @@ It handles an AWS Lambda function that it is invoked by an http request. It show
   "Hello Peter Parker!"
   ```
 
-  You should see the next response if you do not have added any paramenter:
+  You should see the next response if you have not added any paramenter:
 
   ```bash
   "Who are you?"
